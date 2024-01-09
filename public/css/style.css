@@ -1,4 +1,52 @@
 body{
    font-style: italic;
    color: blue;
+   
+}
+nav{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+   background-color: wheat;
+   margin-inline: 80ch;
+   text-align:center;
+   display: flex;
+   list-style: none;
+   color: black;
+
+   
+}
+.container{
+  background-image: url("/img/Burrito2.jpg");
+   color: whitesmoke;
+  min-height: 200ch;
+}
+.container2{
+   background-image: url("/img/Burrito.jpg");
+   min-height: 200ch;
+   color: whitesmoke;
+}
+
+.hero{
+   display: grid;
+   grid-template-areas: 'stack';
+}
+.hero> *{
+   
+   grid-area: stack;
+   color: black;
+}
+
+a{
+   color: inherit;
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+h1{
+   margin-inline: auto;
+   text-align:center;
+   display: flex;
+
 }
