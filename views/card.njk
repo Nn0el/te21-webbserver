@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+{% block content %}
+<main class="container">
+  <h1>{{ title }}</h1>
+  <h2>Boka ett bord!</h2>
+  <form action="/boka" method="post">
+    <label for="name">Namn: </label>
+    <input type="text" name="name" id="name" required>
+    <label for="greeting">Hälsning: </label>
+    <input type="text" name="greeting" id="greeting" required>
+    <button type="submit">Skicka</button>
+  </form>
+
+  <div class="card boka">
+    <p>{{ greeting }}</p>
+    <p>från {{ name }}</p>
+  </div>
+
+</main>
+{% endblock %}
