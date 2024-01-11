@@ -4,16 +4,17 @@
   <h1>{{ title }}</h1>
   <h2>Boka ett bord!</h2>
   <form action="/boka" method="post">
-    <label for="name">Namn: </label>
+    <label for="name">Datum: </label>
     <input type="text" name="name" id="name" required>
-    <label for="greeting">Hälsning: </label>
+    <label for="greeting">Tid: </label>
     <input type="text" name="greeting" id="greeting" required>
     <button type="submit">Skicka</button>
   </form>
 
   <div class="card boka">
-    <p>{{ greeting }}</p>
-    <p>från {{ name }}</p>
+  <p>Du har bokat den {{ name }}</p>
+    <p>klockan {{ greeting }}</p>
+    
   </div>
 
 </main>

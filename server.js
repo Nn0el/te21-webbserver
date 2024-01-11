@@ -5,7 +5,7 @@ const indexRouter = require('./routes/index')
 const port = process.env.PORT || 3000
 const nunjucks = require('nunjucks');
 const bodyParser = require('body-parser')
-const xmasRouter = require('./routes/boka')
+const bokaRouter = require('./routes/boka')
 
 
 
@@ -21,7 +21,7 @@ app.use((req, res, next) => {
     res.locals.url = req.originalUrl
     next()
 })
-app.use('/xmas', bokaRouter)
+app.use('/boka', bokaRouter)
 app.use('/', indexRouter)
 
 
